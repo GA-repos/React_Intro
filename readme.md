@@ -72,9 +72,9 @@ controllers, since we already have them set up.
 
 ## Components (15 min / 0:25)
 
-The way we've been building our pages so far is using
-HTML or simply rendering JSON data. We display a whole page at a time, and in order to display an
-update, we have to reload the entire page.
+The way we've been building our pages so far is using HTML or simply rendering
+JSON data. We display a whole page at a time, and in order to display an update,
+we have to reload the entire page.
 
 A core part of the React philosophy is to build everything out using components,
 instead of templates.
@@ -85,8 +85,8 @@ containing other components. Yes, components can hold other components.
 
 ![Templates Page](images/templates-page.png)
 
-Going back to how our backend worked, we rendered data based the route we were on.
-That's just fine, but it's not the only way.
+Going back to how our backend worked, we rendered data based the route we were
+on. That's just fine, but it's not the only way.
 
 ![Components Page](images/components-page.png)
 
@@ -197,6 +197,12 @@ to worry more about our code and less about configuration.
 ```bash
 $ npm i -g create-react-app
 $ create-react-app blog-app
+
+# Alternatively, you can also run:
+$ npx create-react-app blog-app
+
+# Then"
+
 $ cd blog-app
 $ code .
 $ npm run start
