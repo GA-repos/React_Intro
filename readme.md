@@ -201,7 +201,7 @@ $ create-react-app blog-app
 # Alternatively, you can also run:
 $ npx create-react-app blog-app
 
-# Then"
+# Then:
 
 $ cd blog-app
 $ code .
