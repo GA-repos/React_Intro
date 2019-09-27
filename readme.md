@@ -12,7 +12,7 @@
 
 ## Framing
 
-### What is a Frontend Framework? (5 min / 0:05)
+### What is a Frontend Framework?
 
 - A framework is software providing generic functionality and structure that
   serves as foundation to build and deploy applications.
@@ -29,7 +29,7 @@
   at all -- some people say that they are just libraries and should be referred
   to as such.
 
-### What is ReactJS? (5 min / 0:10)
+### What is ReactJS?
 
 React is a JavaScript library used to craft modern day UI and views for the
 front-end in web applications.
@@ -70,7 +70,7 @@ controllers, since we already have them set up.
   The visual template the user sees, often populated with data from our models.
 </details>
 
-## Components (15 min / 0:25)
+## Components
 
 The way we've been building our pages so far is using HTML or simply rendering
 JSON data. We display a whole page at a time, and in order to display an update,
@@ -159,7 +159,7 @@ easily unit testable.
 > [Jest](https://facebook.github.io/jest/docs/tutorial-react.html) is a popular
 > testing library for React.
 
-## Exercise: Identifying Components (15 min / 0:40)
+## Exercise: Identifying Components (15 min)
 
 > 10 minutes exercise. 5 minutes review.
 
@@ -173,7 +173,7 @@ As you're drawing this out, think about the following questions...
 - Are there any components that share the same structure?
 - Of these similar components, what is different about them?
 
-## Initial Setup (15 min / 0:55)
+## Initial Setup (~15 min)
 
 In order to create a new project and to get our development environment setup,
 we are going to use the Terminal command `create-react-app`. It will create a
@@ -245,7 +245,7 @@ and `index.js`
 
 ---
 
-### We Do: Hello World - A Very Basic Component (10 min / 1:15)
+### We Do: Hello World - A Very Basic Component
 
 The basic unit you'll be working with in ReactJS is a **component**.
 
@@ -309,7 +309,7 @@ This exposes the Hello class to other files which import from the App.js file.
 The `default` keyword means that any import that's name doesn't match a named
 export will automatically revert to this. Only one default is allowed per file.
 
-### JSX (5 min / 1:20)
+### JSX
 
 > Hey you got your html in my javascript!
 >
@@ -339,7 +339,7 @@ Your Hello component's render method:
 > want to learn more,
 > [check out this blog post](http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack/).
 
-## Virtual DOM (5 min / 1:25)
+## Virtual DOM
 
 You may have noticed that our `src/index.js` code mentions ReactDOM. ReactDOM
 doesn't refer to the same DOM we know. Instead, it refers to a Virtual DOM. The
@@ -391,7 +391,7 @@ our site can be built using react components.
 
 ---
 
-### Hello World: A Little Dynamic (15 min / 1:40)
+### Hello World: A Little Dynamic
 
 Our `Hello` component isn't too helpful. Let's make it more interesting.
 
@@ -466,7 +466,7 @@ class Hello extends Component {
 > You can, however, place multiple elements within a parent DOM element, like we
 > do in the previous example with `<div>`.
 
-## You Do: A Blog Post (15 min / 1:55)
+## You Do: A Blog Post (15 min)
 
 > 10 min to work, 5 min review
 
@@ -483,9 +483,9 @@ blog post?
 - Render these properties using a Post component.
 - The composition of your Post is up to you.
 
-### [Solution](https://git.generalassemb.ly/dc-wdi-react-redux/simple-react-blog/tree/post-solution)
+### [Solution](https://git.generalassemb.ly/seir-826/simple-react-blog/tree/post-solution)
 
-## Nested Components (30 minutes / 2:25)
+## Nested Components
 
 #### Q: What problems did you encounter when trying to add multiple comments to your Post?
 
@@ -544,7 +544,7 @@ class Post extends Component {
 export default Post;
 ```
 
-**[Comment Solution](https://git.generalassemb.ly/dc-wdi-react-redux/simple-react-blog/tree/comment-solution)**
+**[Comment Solution](https://git.generalassemb.ly/seir-826/simple-react-blog/tree/comment-solution)**
 
 > **Note**: We could put all of our code in one file, but it's considered a good
 > practice to break components out into different files to help practice
@@ -579,11 +579,11 @@ class Post extends Component {
 }
 ```
 
-**[Final solution](https://git.generalassemb.ly/dc-wdi-react-redux/simple-react-blog/tree/final-solution)**
+**[Final solution](https://git.generalassemb.ly/seir-826/simple-react-blog/tree/final-solution)**
 
 ---
 
-## Closing (5 min / Rest of Class)
+## Closing (Rest of Class)
 
 - Why do we use components in React?
 - What is the Virtual DOM?
