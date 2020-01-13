@@ -419,7 +419,7 @@ function Movies (props) {
 - [React Components and Props | React Docs](https://reactjs.org/docs/components-and-props.html)
 - [React Component Props | Codecademy](https://www.codecademy.com/courses/react-101/lessons/this-props)
 
-## [License](LICENSE.md)
+## [License](LICENSE)
 
 All content is licensed under a CC­BY­NC­SA 4.0 license.
 
