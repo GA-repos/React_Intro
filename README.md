@@ -337,7 +337,7 @@ Your rendered component output should look like this:
 An app that displays only one movie isn't much of a movie app so we'll create a component that will display a bunch of movies.  First, we need more data.
 
 1. Create a new file called `data.js` inside the `src` directory.
-1. Copy the contents of the [data file]('data.js') in this repository.
+1. Copy the contents of the [data file](data.js) in this repository.
 1. Paste the contents inside of the newly created file in your movie app.
 1. Import the file into the App component using the following syntax:
 
