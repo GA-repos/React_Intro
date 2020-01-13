@@ -234,7 +234,6 @@ function Welcome {
 export default Welcome
 ```
 </details>
-</br>
 
 Obviously this is a little impersonal, so let's use props to put a name on the page. _Every component is passed a props object as an argument in React._ We can see this if we add a parameter to our component and log out its value inside the component function. Right now, it's an empty object but we can pass any data we want to our components through it. Let's give that a try.
 
@@ -291,9 +290,8 @@ function Welcome (props) {
 export default Welcome
 ```
 </details>
-</br>
 
-#### Explore on Your Own
+### Explore on Your Own
 
 Test adding props of different datatypes.
 
@@ -308,7 +306,7 @@ Test adding props of different datatypes.
 - Props cannot be named using a JavaScript reserved keyword.
 - There is no limit to the number of props that can be passed to a component (except readability and common sense 😵)
 
-### You Do: Create a Movie Component
+## You Do: Create a Movie Component
 
 Our movie app needs to display some movies. First, add the following variable above the App component function:
 
@@ -349,7 +347,7 @@ This special syntax is called **_destructuring_** and we'll be using a lot in Re
 
 Now we need to do some clean up.  Delete the movie object, the Movie component and its import statement from App.  We'll be composing the Movie component in the Movies component instead.
 
-#### On Your Own
+### On Your Own
 
 Create a new component called **Movies** that renders the following HTML when imported and rendered in the App:
 
@@ -380,9 +378,8 @@ function App () {
 }
 ```
 </details>
-</br>
 
-#### Accessing the Data in Movies
+### Accessing the Data in Movies
 
 Inside of our Movies component, we need to add our Movie components.  Let's make one Movie to start:
 
@@ -397,7 +394,7 @@ function Movies (props) {
 }
 ```
 
-#### Display All of the Movies
+### Display All of the Movies
 
 While this approach works for us, its not very practical.  We need a way to display an unknown number of movies. Earlier we saw that if you try and render an array, React is smart enoungh to just drop the brackets and display all of the data. We also saw that if we try to render an object the whole app breaks.
 
@@ -415,7 +412,7 @@ function Movies (props) {
   )
 }
 ```
-Additional Resources
+## Additional Resources
 
 - [React Components | Codecademy](https://www.codecademy.com/courses/react-101/lessons/your-first-react-component)
 - [Intro to Components | GA Video](https://generalassembly.wistia.com/medias/h64z7lp1ir)
