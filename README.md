@@ -2,7 +2,7 @@
 
 # Introduction to ReactJS
 
-React was originally created by Facebook engineers in 2011 to improve the performance of its web app. Since its initial release as an open source project, React has become a dominant tool in the market for creating richly interactive web interfaces.
+React was originally created by Facebook engineers in 2011 to improve the performance of its web app. Since its initial release as an open source project, React has become a dominant tool in the market for creating richly interactive web interfaces.  
 
 ## Learning Objectives
 
@@ -11,6 +11,8 @@ React was originally created by Facebook engineers in 2011 to improve the perfor
 - Create and render React components in the browser.
 
 ## Framing
+
+Take 4 minutes to watch [What is React?](https://www.youtube.com/watch?v=N3AkSS5hXMA).
 
 React was initially motivated by the need to improve the performance of complex, dynamic, data-rich, web application interfaces. At the same time, the engineers at Facebook were also looking to make their web app more easily maintainable, scalable, extensible and testable. There are 3 key aspects of React that evolved to solve these challenges:
 
@@ -42,11 +44,11 @@ Components can be as small as an individual button or as large as an entire page
 
 Strictly speaking, JSX isn't exclusively a React syntax, but it was built by the folks at Facebook and introduced with an early version of React. **JSX is a syntax extension to JavaScript** that allows us to write code that looks a lot like HTML inside of our JavaScript files. This makes it much faster to build components and easier for us to reason about the interfaces we create in React.
 
-## Exercise: Thinking in React (10 mins)
+## Exercise: Thinking in React (6 mins)
 
-Review what you just heard by taking 4 minutes to watch [What is React?](https://www.youtube.com/watch?v=N3AkSS5hXMA). Then, read the first couple of paragraphs of this post on [_Thinking in React_](https://reactjs.org/docs/thinking-in-react.html) up to **Step 2**.
+In your groups, briefly review how the React docs recommend breaking up a mockup into components in the first couple of paragraphs of this post on [_Thinking in React_](https://reactjs.org/docs/thinking-in-react.html) up to **Step 2**.
 
-In your groups, take a look at one of the following pages on [Craigslist](https://boston.craigslist.org/d/apts-housing-for-rent/search/apa), [Ebay](https://www.ebay.com/b/Apple-Laptops/111422/bn_320025) or [Amtrak](https://tickets.amtrak.com/itd/amtrak) (enter a start, destination and date).
+With that in mind, take a look at this page on [Craigslist](https://boston.craigslist.org/d/apts-housing-for-rent/search/apa) and answer the following questions:
 
 - How would you apply what you've learned so far about React to break the UI into components?
 - What might be an example of a nested component?
@@ -68,7 +70,7 @@ On your own, create a React application:
 1. Once you're in the **sandbox** directory, type `npx create-react-app movie-app` and press enter.
 1. After it's completed and you're returned to the prompt, type `cd movie-app`.
 1. Next, open the application in VS Code by typing `code .`.
-1. Back in the Terminal, type `yarn start` to launch the development server.
+1. Back in the Terminal, type `npm start` to launch the development server.
 
 ## Project Structure
 
@@ -80,6 +82,7 @@ Let's explore some of the files that have been created in the project:
 |   ├── favicon.ico
 |   └── index.html
 ├── package.json
+├── yarn.lock             (delete this)
 └── src
     ├── App.css
     ├── App.js
