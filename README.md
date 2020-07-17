@@ -6,7 +6,7 @@ React was originally created by Facebook engineers in 2011 to improve the perfor
 
 ## Learning Objectives
 
-- Describe what ReactJS and what benefits it provides.
+- Describe what ReactJS is and what benefits it provides.
 - Explain how and why component architectures are used in modern web applications.
 - Create and render React components in the browser.
 
