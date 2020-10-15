@@ -299,7 +299,7 @@ const result = add(8, 6);
 What if it was rewritten this way? What would the return statement need to be to get the same result?
 
 ```js
-function add({ obj }) {
+function add( obj ) {
   // what goes here?
 }
 
