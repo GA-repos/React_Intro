@@ -1,0 +1,1 @@
+![Data flow diagram show how data flows down the component tree from the App component to the Movies component to the Movie components](https://media.git.generalassemb.ly/user/17300/files/adb6e680-0f74-11eb-8267-462e6a3516db)
