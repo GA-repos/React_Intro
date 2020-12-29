@@ -4,6 +4,12 @@
 
 React was originally created by Facebook engineers in 2011 to improve the performance of its web app. Since its initial release as an open source project, React has become a dominant tool in the market for creating richly interactive web interfaces.
 
+There are two main forms of React components - Functional, and Class based - and two ways of passing information between these components - Hooks, and Props. React is constantly growing and evolving and there is a good chance that a year from now, we will be in a new paradigm of ways to work with React. 
+
+There are a plethora of different ways to work with React's functionality. We will be teaching what we believe are the most comprehensive methods. If you find that any other way works for you, or if you discover something new in your own research, please feel free to let us know!
+
+We have used the Analogy that HTML is like Latin - kind of a 'Dead' language, but one that can be used to learn other, more modern languages. React is very similar in that it is a bit outdated in the 2021, 'Mobile First' paradigm of coding, but knowing and understanding React is going to be crucial to understanding Mobile focused languages such as Flutter and Dart, and working with more advanced JS languages like Bootstrap or Gatsby
+
 ## Learning Objectives
 
 - Describe what ReactJS is and what benefits it provides.
@@ -69,6 +75,43 @@ With that in mind, take a look at this page on [Craigslist](https://boston.craig
 
 To get started with React, we're going to use a popular tool called [**Create React App**](https://create-react-app.dev/) to scaffold our React application.
 
+Let's start with a `Hello World` example.
+
+As we will discuss, there are (at least) two different ways to write React code - Class based, and Functional. Don't worry too much about every word in these two examples, we will be discussing them soon.  For now, just take a look at the basic syntax involved in each of these.
+
+
+Every (class) component needs a render function. React is the view layer for users to see and interact with. If these components don't render any elements to the DOM, then they don't serve much purpose. So we'll always have a render function.
+
+The render function returns the html elements that will be loaded somewhere in the DOM.
+
+```js
+class HelloWorld extends Component {
+  render () {
+    return (
+      <div className ="helloWorldText">
+       <h2> Hello World! </h2>
+      </div>
+    )
+  }
+}
+```
+
+```js
+export default function HelloWorld () {
+return (
+   <div className = "helloWorldText">
+     <h2> Hello World! </h2>
+   </div>
+  )
+}
+```
+
+In the top case, the component is a class. In the second, it is functional. These both have their advantages and disadvantages.
+
+Both are made up of a div that says `Hello World!`, but as you will see (and probably have seen) we can do almost anything with this framework.
+
+This isn't the most mind-blowing component. But it is a simple example that we can create custom elements with exactly the functionality we need.
+
 ### I do: Creating a React Application
 
 Watch as I create a React application using Create React App. First, I'll move into the `sandbox` directory where I want to create my project directory. Then, I'll run the Create React App from the command line, which will create the project directory for me and all of the files I need to make my application run.
@@ -105,9 +148,27 @@ Let's explore some of the files that have been created in the project:
     └── setupTest.js      (safe to delete)
 ```
 
-1. **index.html**: The page that will be loaded by the browser. Since browsers only understand HTML, CSS, and JS, so everything we write will be converted into JS and automatically injected into this file so that it can be loaded by the browser. **We don't modify this file except for the page `title`.**
-1. **src/index.js**: This is the main entry point for our JavaScript and its job is to render the top-level App component into the browser's DOM. **We won't modify this file**.
-1. **src/App.js**: As our top-level component of our React application, the App component will load all of our other components as **_descendants_**.
+The `public` folder holds static assets like the favicon and the `index.html` that will load in the browser. Outside of changing the document name, Favicons, and adding links for fonts, we will not be touching these files much, if at all.
+
+The `src` folder has a lot new things. It will be the 'source' for our components and asset files.
+
+- `App.css` - This will be our main CSS folder. Our CSS will be working almost the same as it did in the previous unit, with the biggest difference being the use of "className" instead of "class" when we make and name our div's
+
+- `App.js` the main React component, we'll be writing in here
+
+- `App.test.js` - we haven't gotten a chance to dive into testing but if you look at the code, in summary it says if the app doesn't crash load it. If the app does crash a lot of things happen but they require some deeper poking aorund
+
+- `index.css` - a second CSS file, for the most part you will not be using this one, and will be focusing in the app.css file
+
+- `index.js` - this file has some magic going in in it. Suffice to say, if you create React components in the `src` folder, they will magically work. We will be using it mostly when we work with React Router. Outside of that, there isn't much functionality in this file.
+
+
+- `logo.svg`-that's that spinning react logo you see in the browser. SVG is a really great technology worth exploring sometime later...
+
+- `serviceWorker.js`, rather than an express app serving our web pages, this service worker is helping us interact with our app in the browser. [More info](https://developers.google.com/web/fundamentals/primers/service-workers/) - we are going to go ahead and call this part 'magic' since we don't have time to jump down this rabit hole.
+
+Note: if you need to add a dependency you'd just run `npm install react-router-dom` or any other dependency you might want.
+
 
 ## Creating Components in React
 
