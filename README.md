@@ -256,15 +256,36 @@ function HelloWorld() {
   // Parentheses group the JSX so that
   // it can break over several lines for readability
   return (
-    <header>
+    <div className = "helloWorld">
       <h1>Hello World!</h1>
       <h2>⭐️ Welcome to React ⭐️</h2>
-    </header>
+    </div>
   );
 }
 
 // Export the component so that it can be imported in other files
 export default HelloWorld;
+```
+
+
+```jsx
+
+//here we are importing the basic React framework, as well as the HelloWorld componant from the previous file
+import React from 'react';
+import HelloWorld from './HelloWorld'
+
+
+function HelloWorldContainer() {
+ 
+  return (
+    <div className = "helloWorldContainer>
+   <HelloWorld/>
+    </div>
+  );
+}
+
+//we are exporting our container so it can be held in its parent component
+export default HelloWorldContainer;
 ```
 
 It's **_super important_** to remember that our component functions can only return **one** element, but that element can contain as many other elements as we want! In the above example, we're return a single `header` element. Which of the following are **not** valid in a component's return statement:
@@ -282,9 +303,9 @@ return (
 ```jsx
 //...
 return (
-  <header>
+  <div className ="title">
     <h2>React Fundamentals<h2>
-  </header>
+  </div>
   <p>The create-react-app package makes it easy to bootstrap a React application.</p>
 )
 ```
@@ -292,7 +313,7 @@ return (
 ```jsx
 //...
 return (
-  <section>
+  <div className = "links">
     <h2>React Documentation Links<h2>
     <ul>
       <li>
@@ -302,7 +323,7 @@ return (
         <a href="https://reactjs.org/docs/components-and-props.html">Components and Props</a>
       </li>
     </ul>
-  </section>
+  </div>
 )
 ```
 
