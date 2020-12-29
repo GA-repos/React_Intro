@@ -63,6 +63,9 @@ React was initially motivated by the need to improve the performance of complex,
 
 ## Breakout: Thinking in Components
 
+Lets look at a few projects built in React and see how the individual components are used to build up our projects as a whole.
+
+
 In your groups, briefly review how the React docs recommend breaking up a mockup into components in the first couple of paragraphs of this post on [_Thinking in React_](https://reactjs.org/docs/thinking-in-react.html) up to **Step 2**.
 
 With that in mind, take a look at this page on [Craigslist](https://boston.craigslist.org/d/apts-housing-for-rent/search/apa) and answer the following questions:
@@ -178,7 +181,7 @@ Lets take a closer look at the `App.js` file that makes up our App component. As
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -190,7 +193,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </div>
     </div>
   );
 }
@@ -346,6 +349,8 @@ Create a component that produces the following HTML when rendered on the page:
 Make sure to import your component into the `App.js` file and compose it in the App components output to make it display on the page.
 
 ## Component Props
+
+The ability to pass Props, short for 'properties', is one of the most important and powerful features of React. These allow us to work with and change individual components on a page while keeping the page as a whole the same - think the 'add comment' feature in Facebook photos, or filtering searched items on Ebay.
 
 In order to make our components truly reusable, we need a way to pass them the unique data that they are meant to display. In React we do this with the **_props_** argument. Props is simply an object that is is passed to the component containing all of our argument data in one neat and tidy package. Consider the following Javascript:
 
