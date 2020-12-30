@@ -4,7 +4,7 @@
 
 React was originally created by Facebook engineers in 2011 to improve the performance of its web app. Since its initial release as an open source project, React has become a dominant tool in the market for creating richly interactive web interfaces.
 
-There are two main forms of React components - Functional, and Class based - and two ways of passing information between these components - Hooks, and Props. React is constantly growing and evolving and there is a good chance that a year from now, we will be in a new paradigm of ways to work with React. 
+There are two main forms of React components - Functional, and Class based - and different ways of passing information between these components - Hooks, and Props. React is constantly growing and evolving and there is a good chance that a year from now, we will be in a new paradigm of ways to work with React. 
 
 There are a plethora of different ways to work with React's functionality. We will be teaching what we believe are the most comprehensive methods. If you find that any other way works for you, or if you discover something new in your own research, please feel free to let us know!
 
