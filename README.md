@@ -218,20 +218,29 @@ Let's test out our theory about JSX works. Select everything inside of the App f
 ```jsx
 import React from 'react';
 
-// HelloWorld is a separate component
-// It's job is to render an h1 element
-// to the page that contains the text
-// "Hello World"
 function HelloWorld() {
-  return <h1>Hello World</h1>;
+  return (
+  <h1>Hello World</h1>;
+  )
 }
 
-// App is also a separate component
-// App will render our HelloWorld component
+export default HelloWorld
+```
+
+```jsx
+import React from 'react';
+import HelloWorld from './HelloWorld'
+
+
 function App() {
+
   // This is how we "invoke" the HelloWorld
   // component's function in React
-  return <HelloWorld />;
+  return ( 
+  
+  <HelloWorld />;
+  
+  )
 }
 
 export default App;
