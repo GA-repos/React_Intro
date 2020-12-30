@@ -83,7 +83,7 @@ Let's start with a `Hello World` example.
 As we will discuss, there are (at least) two different ways to write React code - Class based, and Functional. Don't worry too much about every word in these two examples, we will be discussing them soon.  For now, just take a look at the basic syntax involved in each of these.
 
 
-Every (class) component needs a render function. React is the view layer for users to see and interact with. If these components don't render any elements to the DOM, then they don't serve much purpose. So we'll always have a render function.
+Every Class based component needs a render function. React is the view layer for users to see and interact with. If these components don't render any elements to the DOM, then they don't serve much purpose. So we'll always have a render function when we use them. Functional components - which are fairly newer, and what we will be concentrating on in this class - do not require the "Render" method, just a "Return" statement.
 
 The render function returns the html elements that will be loaded somewhere in the DOM.
 
@@ -97,6 +97,8 @@ class HelloWorld extends Component {
     )
   }
 }
+
+export default HelloWorld
 ```
 
 ```js
