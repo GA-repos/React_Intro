@@ -141,7 +141,7 @@ Let's explore some of the files that have been created in the project:
 |   ├── favicon.ico
 |   └── index.html
 ├── package.json
-├── yarn.lock             (delete this)
+├── yarn.lock             (you can delete this)
 └── src
     ├── App.css
     ├── App.js
@@ -159,11 +159,11 @@ The `src` folder has a lot new things. It will be the 'source' for our component
 
 - `App.css` - This will be our main CSS folder. Our CSS will be working almost the same as it did in the previous unit, with the biggest difference being the use of "className" instead of "class" when we make and name our div's
 
-- `App.js` the main React component, we'll be writing in here
+- `App.js` the main React component, we'll be writing a great deal of our code in here
 
-- `App.test.js` - we haven't gotten a chance to dive into testing but if you look at the code, in summary it says if the app doesn't crash load it. If the app does crash a lot of things happen but they require some deeper poking aorund
+- `App.test.js` - we haven't gotten a chance to dive into testing but if you look at the code, in summary it says if the app doesn't crash load it. If the app does crash a lot of things happen but they require some deeper poking aorund. Mostly avoid touching this file
 
-- `index.css` - a second CSS file, for the most part you will not be using this one, and will be focusing in the app.css file
+- `index.css` - a second CSS file, for the most part you will not be using this one, and will be focusing in the App.css file
 
 - `index.js` - this file has some magic going in in it. Suffice to say, if you create React components in the `src` folder, they will magically work. We will be using it mostly when we work with React Router. Outside of that, there isn't much functionality in this file.
 
