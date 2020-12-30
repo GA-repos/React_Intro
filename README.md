@@ -119,7 +119,7 @@ This isn't the most mind-blowing component. But it is a simple example that we c
 
 ### I do: Creating a React Application
 
-Watch as I create a React application using Create React App. First, I'll move into the `sandbox` directory where I want to create my project directory. Then, I'll run the Create React App from the command line, which will create the project directory for me and all of the files I need to make my application run.
+Watch as I create a React application using Create React App. First, I'll move into the `Unit 2` directory where I want to create my project directory. Then, I'll run the Create React App from the command line, which will create the project directory for me and all of the files I need to make my application run.
 
 ### You do: Create and Start a React Application
 
