@@ -299,7 +299,7 @@ function HelloWorldContainer() {
 export default HelloWorldContainer;
 ```
 
-It's **_super important_** to remember that our component functions can only return **one** element, but that element can contain as many other elements as we want! In the above example, we're return a single `header` element. Which of the following are **not** valid in a component's return statement:
+It's **_super important_** to remember that our component functions can only return **one** element, but that element can contain as many other elements as we want! In the above example, we're returning a single element. Which of the following are **not** valid in a component's return statement:
 
 ```jsx
 //...
@@ -365,7 +365,6 @@ function App() {
 export default App;
 ```
 
-How can we render multiple Hello World headers?
 
 ## You Do: Create a Component
 
@@ -450,16 +449,16 @@ Clearly, if all of our data had to be passed to our components as strings, that 
 ```jsx
 // if we pass values like these:
 <MyComponent
-  name="Jen"
-  age={21}
+  name="Jeremy"
+  age={33}
   favoriteLanguages={['Javascript', 'Python', 'Java']}
 />;
 
 // our props object will look like this:
 
 props = {
-  name: 'Jen',
-  age: 21,
+  name: 'Jeremy',
+  age: 33,
   favoriteLanguages: ['Javascript', 'Python', 'Java'],
 };
 ```
@@ -474,8 +473,7 @@ Let's create a simple Welcome component. The HTML we'll want to render is:
 <p>Welcome, User!</p>
 ```
 
-<details>
-  <summary>Solution</summary>
+
 
 ```jsx
 import React from 'react';
@@ -487,7 +485,6 @@ function Welcome {
 export default Welcome
 ```
 
-</details>
 
 Obviously this is a little impersonal, so let's use props to put a name on the page. _Every component is passed a props object as an argument in React._ We can see this if we add a parameter to our component and log out its value inside the component function. Right now, it's an empty object but we can pass any data we want to our components through it. Let's give that a try.
 
