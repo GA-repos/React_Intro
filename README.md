@@ -597,7 +597,7 @@ const movie = {
 Your rendered component output should look like this:
 
 ```html
-<div class="movie">
+<div className="movie">
   <h2>Star Wars: The Rise of Skywalker</h2>
   <img
     src="https://image.tmdb.org/t/p/w500/db32LaOibwEliAmSL2jjDF6oDdj.jpg"
