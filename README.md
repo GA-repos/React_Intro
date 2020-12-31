@@ -490,6 +490,17 @@ export default Welcome
 
 Obviously this is a little impersonal, so let's use props to put a name on the page. _Every component is passed a props object as an argument in React._ We can see this if we add a parameter to our component and log out its value inside the component function. Right now, it's an empty object but we can pass any data we want to our components through it. Let's give that a try.
 
+
+To get everything working, we need to pass props between components. This is done quite simply (but not easily, as you will see!) like this:
+
+```jsx
+
+function Welcome (props) {
+
+}
+
+```
+
 Inside the Header component where the Welcome component is rendered, change the Welcome component to add the following:
 
 ```jsx
