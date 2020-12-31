@@ -496,7 +496,10 @@ To get everything working, we need to pass props between components. This is don
 ```jsx
 
 function Welcome (props) {
-
+  return (
+     <p>Welcome, {props.name} </p>
+     
+     )
 }
 
 ```
