@@ -451,7 +451,7 @@ Clearly, if all of our data had to be passed to our components as strings, that 
 <MyComponent
   name="Jeremy"
   age={33}
-  favoriteLanguages={['Javascript', 'Python', 'Java']}
+  favoriteLanguages={['Javascript', 'Python', 'Ruby']}
 />;
 
 // our props object will look like this:
@@ -459,7 +459,7 @@ Clearly, if all of our data had to be passed to our components as strings, that 
 props = {
   name: 'Jeremy',
   age: 33,
-  favoriteLanguages: ['Javascript', 'Python', 'Java'],
+  favoriteLanguages: ['Javascript', 'Python', 'Ruby'],
 };
 ```
 
@@ -478,8 +478,10 @@ Let's create a simple Welcome component. The HTML we'll want to render is:
 ```jsx
 import React from 'react';
 
-function Welcome {
-  return <p>Welcome, User!</p>;
+function Welcome() {
+  return(
+    <p>Welcome, User!</p>
+  )
 }
 
 export default Welcome
