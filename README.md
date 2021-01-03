@@ -63,6 +63,9 @@ React was initially motivated by the need to improve the performance of complex,
 
 ## Breakout: Thinking in Components
 
+![Component Map](https://i.imgur.com/6UlRTOj.png)
+
+
 Lets look at a few projects built in React and see how the individual components are used to build up our projects as a whole.
 
 
