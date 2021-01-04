@@ -8,7 +8,7 @@ There are two main forms of React components - Functional, and Class based - and
 
 There are a plethora of different ways to work with React's functionality. We will be teaching what we believe are the most comprehensive methods. If you find that any other way works for you, or if you discover something new in your own research, please feel free to let us know!
 
-We have used the Analogy that HTML is like Latin - kind of a 'Dead' language, but one that can be used to learn other, more modern languages. React is very similar in that it is a bit outdated in the 2021, 'Mobile First' paradigm of coding, but knowing and understanding React is going to be crucial to understanding Mobile focused languages such as Flutter and Dart, and working with more advanced JS languages like Bootstrap or Gatsby
+We have used the Analogy that HTML is like Latin - one that can be used to learn other, more modern languages. React is very similar in that it is a bit outdated in the 2021, 'Mobile First' paradigm of coding, but knowing and understanding React is going to be crucial to understanding Mobile focused languages such as Flutter and Dart, and working with more advanced JS languages like Bootstrap or Gatsby
 
 ## Learning Objectives
 
