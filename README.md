@@ -130,7 +130,7 @@ On your own, create a React application:
 
 1. In the Terminal, create and enter the directory you want to work in.
 1. Once you're in the correct directory, type `npx create-react-app my-app` and press enter.
-1. After it's completed and you're returned to the prompt, type `cd my-aoo`.
+1. After it's completed and you're returned to the prompt, type `cd my-app`.
 1. Next, open the application in your code editor
 1. Back in the Terminal, open up a new tab within the same directory and type `npm start` to launch the development server.
 
